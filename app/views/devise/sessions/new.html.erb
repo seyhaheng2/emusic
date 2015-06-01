@@ -1,0 +1,29 @@
+<div class="ui page five " style="width:400px;margin:40px auto;">
+<h3>Login</h3>
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+      <div class="ui column input icon fluid">
+        <%= f.email_field :email, autofocus: true, placeholder: "Email" %>
+        <i class="mail icon"></i>
+      </div>
+      <div style="margin-top:5px;"></div>
+      <div class="ui icon actions input fluid">
+        <%= f.password_field :password, autocomplete: "off", placeholder: "Password" %>
+        <i class="key icon"></i>
+      </div>
+
+    <!--   <%# if devise_mapping.rememberable? -%>
+        <div class="field">
+          <%#= f.check_box :remember_me %>
+          <%#= f.label :remember_me %>
+        </div>
+      <%# end -%> -->
+
+    <div class="ui buttons centered row" style="margin-top:10px;">
+      <%= f.submit "Login", class: "labeled ui button red small" %>
+      <div class="or"></div>
+      <%= link_to "Register", new_user_registration_path, class: "labeled ui button purple small" %>
+    </div>
+
+  <% end %>
+
+</div>

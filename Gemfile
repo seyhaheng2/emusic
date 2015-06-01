@@ -43,3 +43,8 @@ group :development, :test do
   gem 'spring'
 end
 
+gem 'devise'
+gem 'therubyracer', platforms: :ruby # or any other runtime
+gem 'less-rails'
+gem 'autoprefixer-rails'
+gem 'semantic-ui-rails'

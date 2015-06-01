@@ -81,5 +81,4 @@ test:
 production:
   <<: *default
   database: eMusic_production
-  username: eMusic
   password: <%= ENV['EMUSIC_DATABASE_PASSWORD'] %>
